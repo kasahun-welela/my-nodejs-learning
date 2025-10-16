@@ -18,7 +18,7 @@ export const logEvent = async (messages)=>{
     {
         await fsPromises.mkdir(path.join(__dirname,"logs"))
     }
-    await fsPromises.appendFile(path.join(__dirname, 'logs','logs'), logItems)
+    await fsPromises.appendFile(path.join(__dirname, 'logs','event-logs'), logItems)
  } catch(err)
  {
     console.error(err)
